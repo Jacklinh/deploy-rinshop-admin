@@ -1,0 +1,206 @@
+
+body,
+#root {
+    display: block !important;
+    min-width: 100% !important;
+}
+:root {
+    --main-background: #fbfeff;
+    --main-color: #009f7f;
+    --body-color: #222222;
+    --bg-gray: #F3F4F6;
+    --bg-white: #ffffff;
+    --theme-color: #0da487;
+    --body-background: #f9f9f6;
+    --body-background-active: #ffa53b;
+}
+#root,
+#root *,
+#root *:before,
+#root *:after {
+    box-sizing: border-box;
+}
+/* layout */
+.page-body-wrapper {
+    background-color: var(--main-background);
+}
+.sidebar-wrapper {
+    width: 280px !important;
+    flex: 0 0 280px !important; 
+    max-width: 280px !important;
+    min-width: 280px !important;
+    height: auto;
+    text-align: left;
+    overflow: hidden;
+    color: #ffffff;
+    background: linear-gradient(-45deg, #0da487, #009289, #ffa53b) !important;
+    background-size: 400% 400%;
+}
+.sidebar-menu {
+    background: transparent;
+    color: #ffffff;
+}
+.sidebar-menu li {
+    color: #ffffff !important;
+}
+.sidebar-menu li.ant-menu-item-selected {
+    background-color: var(--body-background-active);
+}
+.page-body{
+    background-color: var(--body-background);
+}
+.content-wrapper {
+    background-color: var(--body-background);
+    padding: 25px;
+}
+.responsive_image {
+    max-width: 100%;
+    height: auto;
+}
+p {
+    margin: 0;
+}
+/* modal add */
+.box_modal .ant-btn-primary {
+    background-color: var(--main-color);
+}
+.box_modal input{
+    min-height: 30px;
+}
+/* form_search */
+.form_search input {
+    min-height: 40px;
+    min-width: 400px;
+    background-color: var(--body-background);
+    border: 0;
+}
+.form_search button {
+    min-height: 40px;
+}
+.form_search button[type="submit"] {
+    background-color: var(--body-background-active);
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: none;
+}
+.form_search button[type="submit"]:disabled {
+    opacity: 0.5;
+}
+.form_search button[type="reset"] {
+    font-weight: 500;
+    text-transform: uppercase;
+} 
+/* button style */
+.common_button {
+    background-color: var(--main-color);
+}
+.btn_add {
+    border-radius: 8px;
+    height: auto;
+    padding: 5px 15px;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+.data_table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+}
+.data_table .ant-table-wrapper {
+    overflow-y: auto;
+}
+/* box_heading */
+.box_heading{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+    align-items: center;
+    background-color: var(--bg-white);
+    color: var(--body-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.box_heading .ant-select-selector {
+    min-height: 40px;
+    min-width: 300px;
+}
+/* form_edit */
+.form_edit .form_edit_item {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+.form_edit_item .form_edit_ttl {
+    width: 40%;
+}
+.form_edit_item .form_edit_content {
+    flex: 1;
+    background-color: #ffffff;
+    color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ckeditor_content .ck-editor__editable {
+    min-height: 200px;
+}
+/* pagination_page */
+.pagination_page {
+    margin-top: 30px;
+}
+/* sec_footer */
+.sec_footer {
+    font-size: 112.5%;
+    background-color: #ffffff;
+    color: #222222;
+    padding: 15px;
+    text-align: center;
+}
+/* box_filter */
+.box_filter {
+    margin-bottom: 30px;
+}
+.box_filter p {
+    font-weight: bold;
+    margin-right: 10px;
+}
+/* dashboard_page */
+.dashboard_list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+.dashboard_col {
+    width: calc((100% - 60px) / 4);
+}
+.dashboard_item {
+    background-color: var(--bg-white);
+    border-radius: 10px;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboard_icon {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.dashboard_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.dashboard_title {
+    font-weight: 500;
+    color: var(--body-color);
+}
+.dashboard_value {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}

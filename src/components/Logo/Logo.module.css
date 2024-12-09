@@ -1,0 +1,11 @@
+.logo_wrapper {
+    padding: 25px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.logo_wrapper h1 {
+    margin: 0;
+}
