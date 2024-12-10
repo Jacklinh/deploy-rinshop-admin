@@ -1,4 +1,4 @@
 export const globalSetting = {
-    URL_API: 'http://localhost:8000/api/v1',
-    UPLOAD_DIRECTORY: 'http://localhost:8000/'
+    URL_API: 'https://deploy-rinshop-restfulapi-mongoose-8skddf8in.vercel.app/api/v1',
+    UPLOAD_DIRECTORY: 'https://deploy-rinshop-restfulapi-mongoose-8skddf8in.vercel.app/'
 }
