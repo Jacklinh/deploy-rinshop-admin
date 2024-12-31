@@ -100,3 +100,47 @@ export type TypeMainvs = {
     _id?: string,
     images?: string[]
 }
+
+export type TypeResume = {
+    _id?: string,
+    personalInfo: {
+        avatar: string,
+        fullName: string,
+        birthday: string,
+        email: string,
+        phone: string,
+        github: string,
+        address: string,
+    },
+    education: [
+        {
+            institution: string, degree: string, year: string, detail: string
+        }
+    ],
+    skills: [
+        {
+            nameSkill: string,
+            percentage: number,
+            detail: [{
+                value: string
+            }]
+        }
+    ]
+    experience: [
+        { company: string, 
+            role: string, 
+            duration: string, 
+            description: string 
+        }
+    ],
+    projects: [
+        { 
+            name: string,
+            description: string, 
+            link: string, 
+            role: string,
+            image: string
+        }
+    ],
+    
+}

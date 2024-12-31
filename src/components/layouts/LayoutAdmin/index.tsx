@@ -67,17 +67,6 @@ const items: MenuProps['items'] = [
                 label: "ĐƠN HÀNG"
             }
         ],
-    },
-    {    
-        label: "QUẢN LÝ TRANG CHỦ",
-        type: "group",
-        children: [
-            {
-                key: "carousel",
-                icon: <TbUsersGroup />,
-                label: "Carousel"
-            }
-        ],
     }
 ];
 const LayoutAdmin = () => {
