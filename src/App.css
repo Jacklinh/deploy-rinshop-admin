@@ -101,6 +101,11 @@ p {
     font-size: 1.05rem;
     font-weight: 500;
 }
+.btn_link  {
+    color: #ffffff;
+    line-height: 40px;
+    margin-right: 15px;
+}
 .data_table {
     background-color: #ffffff;
     border-radius: 10px;

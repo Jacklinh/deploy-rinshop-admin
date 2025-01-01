@@ -11,7 +11,7 @@ const HeaderAdmin = () => {
             <Link 
                 to="https://deploy-rinshop-client-nextjs.vercel.app/" 
                 target='_blank' 
-                className={styles.buttonLink} 
+                className="common_button btn_add" 
             >
                 <TbHomeShare className="mr-2" />
                 Trang đặt hàng
