@@ -50,7 +50,7 @@ const LoginAPI = () => {
                         
                         rules={[{ required: true, message: 'Vui lòng nhập Email!' }]}
                     >
-                        <Input prefix={<UserOutlined />} placeholder="email" defaultValue="phong.hoang@example.com" />
+                        <Input prefix={<UserOutlined />} placeholder="email role viewer" defaultValue="an.nguyen@example.com" />
                     </Form.Item>
                     <Form.Item
                         label="Password"
@@ -68,6 +68,12 @@ const LoginAPI = () => {
                                 Đăng nhập
                             </Button>
                         )}
+                        
+                    </Form.Item>
+                    <Form.Item
+                        label="Note"
+                        extra="Với quyền viewer chỉ cho phép xem. còn user cho phép thêm sửa"
+                    >
                         
                     </Form.Item>
                 </Form>

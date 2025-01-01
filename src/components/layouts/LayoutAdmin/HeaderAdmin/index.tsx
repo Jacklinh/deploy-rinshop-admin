@@ -1,11 +1,15 @@
 import { Layout } from 'antd';
 import styles from './HeaderAdmin.module.css'
 import UserInfo from '../../../UserInfo';
+import { Link } from 'react-router-dom';
 const HeaderAdmin = () => {
     const { Header } = Layout;
     return (
         <>
         <Header className={styles.sec_header} >
+            <Link to="https://deploy-rinshop-client-nextjs.vercel.app/" target='_blank' className="text-blue-500 hover:underline">
+               Trang đặt hàng
+            </Link>
             <UserInfo />
         </Header>
         </>
