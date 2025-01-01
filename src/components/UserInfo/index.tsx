@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Popover, Space, Avatar, Button  } from 'antd';
-import { UserOutlined,LogoutOutlined } from '@ant-design/icons';
+import { LogoutOutlined } from '@ant-design/icons';
 import useAuth from '../../hooks/useAuth'; 
 import styles from "./UserInfo.module.css"
 const UserInfo = () => {
@@ -18,7 +18,6 @@ const UserInfo = () => {
                     <span className={styles.user_email}>{user?.email}</span>
                 </p>
             </div>
-            <Button className={styles.user_profile}><UserOutlined /><Link to={"/profile"}>Quản lý tài khoản</Link></Button>
             <Button className={styles.user_logout} onClick={logout}><LogoutOutlined /> Đăng xuất</Button>
         </div>
     );
