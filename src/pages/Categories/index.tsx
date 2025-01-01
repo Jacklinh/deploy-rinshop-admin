@@ -115,11 +115,6 @@ const Categories = () => {
         setIsModalAddOpen(false);
     }
     const onFinishAdd: FormProps<categoryDataType>['onFinish'] = (values: categoryDataType) => {
-        // xử lý khi upload file
-		if (fileList.length === 0) {
-            message.error('Vui lòng chọn file trước khi thêm product.');
-            return;
-        }
 		const formData = new FormData();
 		// Lặp qua tất cả các trường trong values và thêm chúng vào formData
 		Object.entries(values).forEach(([key, value]) => {
