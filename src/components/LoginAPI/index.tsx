@@ -47,16 +47,17 @@ const LoginAPI = () => {
                     <Form.Item
                         label="Email"
                         name="email"
+                        
                         rules={[{ required: true, message: 'Vui lòng nhập Email!' }]}
                     >
-                        <Input prefix={<UserOutlined />} placeholder="email" />
+                        <Input prefix={<UserOutlined />} placeholder="email" defaultValue="phong.hoang@example.com" />
                     </Form.Item>
                     <Form.Item
                         label="Password"
                         name="password"
                         rules={[{ required: true, message: 'Vui lòng nhập mật khẩu!' }]}
                     >
-                        <Input.Password prefix={<LockOutlined />} type="password" placeholder="password" />
+                        <Input.Password prefix={<LockOutlined />} type="password" defaultValue="password123" placeholder="password" />
                     </Form.Item>
                     <Form.Item shouldUpdate>
                         {() => (
